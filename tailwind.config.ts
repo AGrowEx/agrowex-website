@@ -27,7 +27,7 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
-					glow: 'hsl(var(--primary-glow))'
+					light: 'hsl(var(--primary-light))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -53,11 +53,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'earth-green': 'hsl(var(--earth-green))',
-				'forest-green': 'hsl(var(--forest-green))',
-				'tech-blue': 'hsl(var(--tech-blue))',
-				'warm-earth': 'hsl(var(--warm-earth))',
-				'deep-earth': 'hsl(var(--deep-earth))',
+				'brand-primary': 'hsl(var(--brand-primary))',
+				'brand-secondary': 'hsl(var(--brand-secondary))',
+				'brand-accent': 'hsl(var(--brand-accent))',
+				'brand-dark': 'hsl(var(--brand-dark))',
+				'brand-light': 'hsl(var(--brand-light))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -70,18 +70,19 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-brand': 'var(--gradient-brand)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-subtle': 'var(--gradient-subtle)'
+				'gradient-subtle': 'var(--gradient-subtle)',
+				'gradient-card': 'var(--gradient-card)'
 			},
 			boxShadow: {
-				'elegant': 'var(--shadow-elegant)',
-				'glow': 'var(--shadow-glow)',
-				'card': 'var(--shadow-card)'
+				'brand': 'var(--shadow-brand)',
+				'card': 'var(--shadow-card)',
+				'elevated': 'var(--shadow-elevated)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',
-				'bounce': 'var(--transition-bounce)'
+				'spring': 'var(--transition-spring)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

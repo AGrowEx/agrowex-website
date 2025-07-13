@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Leaf } from "lucide-react";
 
 const Navigation = () => {
   const navItems = [
@@ -10,16 +9,18 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-6xl mx-auto px-6 py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-md border-b border-border shadow-card">
+      <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="p-2 bg-gradient-primary rounded-lg">
-              <Leaf className="h-6 w-6 text-white" />
-            </div>
+          <div className="flex items-center gap-4">
+            <img 
+              src="/lovable-uploads/ac71843d-6b3e-45d1-bd24-263272620930.png" 
+              alt="AGX Global Logo" 
+              className="h-10 w-auto"
+            />
             <div>
-              <div className="font-bold text-deep-earth text-xl">AGX Global</div>
-              <div className="text-xs text-muted-foreground">Xcelerating Agriculture</div>
+              <div className="font-bold text-brand-dark text-xl tracking-tight">AGX Global</div>
+              <div className="text-xs text-muted-foreground font-medium">Xcelerating Agriculture</div>
             </div>
           </div>
           
@@ -28,14 +29,14 @@ const Navigation = () => {
               <a 
                 key={item.label}
                 href={item.href}
-                className="text-deep-earth hover:text-earth-green transition-colors"
+                className="text-brand-dark hover:text-brand-primary transition-colors font-medium"
               >
                 {item.label}
               </a>
             ))}
           </div>
           
-          <Button variant="earth" size="sm">
+          <Button variant="professional" size="sm" className="font-medium">
             Contact Us
           </Button>
         </div>

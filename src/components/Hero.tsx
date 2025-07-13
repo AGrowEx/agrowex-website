@@ -9,7 +9,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-deep-earth/80 via-forest-green/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/85 via-brand-primary/70 to-brand-primary/40"></div>
       </div>
       
       {/* Content */}
@@ -26,27 +26,27 @@ const Hero = () => {
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <Button variant="brand" size="lg" className="text-lg px-10 py-4 font-semibold">
             Explore Solutions
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-deep-earth">
+          <Button variant="outline" size="lg" className="text-lg px-10 py-4 border-white/80 text-white hover:bg-white hover:text-brand-dark font-medium">
             Learn More
           </Button>
         </div>
         
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-3xl font-bold text-primary-glow">12,000</div>
-            <div className="text-sm opacity-80">Years of Agriculture History</div>
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="bg-white/15 backdrop-blur-md rounded-xl p-8 shadow-elevated">
+            <div className="text-4xl font-bold text-brand-secondary mb-2">12,000</div>
+            <div className="text-sm opacity-90 font-medium">Years of Agriculture History</div>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-3xl font-bold text-primary-glow">$4-8T</div>
-            <div className="text-sm opacity-80">Global Agriculture GDP</div>
+          <div className="bg-white/15 backdrop-blur-md rounded-xl p-8 shadow-elevated">
+            <div className="text-4xl font-bold text-brand-secondary mb-2">$4-8T</div>
+            <div className="text-sm opacity-90 font-medium">Global Agriculture GDP</div>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-3xl font-bold text-primary-glow">12%</div>
-            <div className="text-sm opacity-80">Digital Transformation in Agri</div>
+          <div className="bg-white/15 backdrop-blur-md rounded-xl p-8 shadow-elevated">
+            <div className="text-4xl font-bold text-brand-secondary mb-2">12%</div>
+            <div className="text-sm opacity-90 font-medium">Digital Transformation in Agri</div>
           </div>
         </div>
       </div>

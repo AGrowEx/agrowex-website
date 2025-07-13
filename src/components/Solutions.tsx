@@ -7,22 +7,22 @@ const Solutions = () => {
     {
       title: "Data",
       description: "Real-time collection",
-      color: "bg-tech-blue"
+      color: "bg-brand-accent"
     },
     {
       title: "Knowledge", 
       description: "Meaning from data",
-      color: "bg-earth-green"
+      color: "bg-brand-primary"
     },
     {
       title: "Wisdom",
       description: "Contextual intelligence", 
-      color: "bg-forest-green"
+      color: "bg-brand-secondary"
     },
     {
       title: "Action",
       description: "Timely, optimized decisions",
-      color: "bg-gradient-primary"
+      color: "bg-gradient-brand"
     }
   ];
 
@@ -69,7 +69,7 @@ const Solutions = () => {
     <section className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-deep-earth mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
             Solution 2.0 – GenAI-powered Precision Farming
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
@@ -79,13 +79,13 @@ const Solutions = () => {
 
         {/* 4 Pillars */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-deep-earth mb-8">4 Pillars of Our Platform</h3>
+          <h3 className="text-2xl font-bold text-center text-brand-dark mb-8">4 Pillars of Our Platform</h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {pillars.map((pillar, index) => (
-              <Card key={index} className={`${pillar.color} text-white shadow-elegant border-0`}>
-                <CardContent className="p-6 text-center">
-                  <h4 className="text-2xl font-bold mb-2">{pillar.title}</h4>
-                  <p className="text-sm opacity-90">{pillar.description}</p>
+              <Card key={index} className={`${pillar.color} text-white shadow-brand border-0`}>
+                <CardContent className="p-8 text-center">
+                  <h4 className="text-2xl font-bold mb-3">{pillar.title}</h4>
+                  <p className="text-sm opacity-90 font-medium">{pillar.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -94,23 +94,23 @@ const Solutions = () => {
 
         {/* Platform Modules */}
         <div>
-          <h3 className="text-2xl font-bold text-center text-deep-earth mb-8">Platform Modules</h3>
+          <h3 className="text-2xl font-bold text-center text-brand-dark mb-8">Platform Modules</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {modules.map((module, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elegant transition-all duration-300 border-0">
+              <Card key={index} className="shadow-card hover:shadow-elevated transition-all duration-300 border-0 bg-gradient-card">
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <div className="p-3 bg-gradient-primary rounded-lg">
+                    <div className="p-3 bg-gradient-brand rounded-xl shadow-brand">
                       <module.icon className="h-6 w-6 text-white" />
                     </div>
-                    <Badge variant="secondary" className="text-xs">
+                    <Badge variant="secondary" className="text-xs font-medium">
                       {module.badge}
                     </Badge>
                   </div>
-                  <CardTitle className="text-xl text-deep-earth">{module.name}</CardTitle>
+                  <CardTitle className="text-xl text-brand-dark font-semibold">{module.name}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{module.description}</p>
+                  <p className="text-muted-foreground leading-relaxed">{module.description}</p>
                 </CardContent>
               </Card>
             ))}

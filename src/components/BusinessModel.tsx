@@ -38,8 +38,8 @@ const BusinessModel = () => {
   return (
     <section className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-deep-earth mb-6">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
             Business Model
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -116,23 +116,23 @@ const BusinessModel = () => {
         </div>
 
         {/* Market Opportunity */}
-        <Card className="bg-gradient-hero text-white shadow-glow">
+        <Card className="bg-gradient-hero text-white shadow-elevated">
           <CardHeader>
-            <CardTitle className="text-3xl text-center">Market Opportunity</CardTitle>
+            <CardTitle className="text-3xl text-center font-bold">Market Opportunity</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="pb-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-4xl font-bold mb-2">$45B+</div>
-                <div className="opacity-90">Global AgriTech market</div>
+              <div className="p-8">
+                <div className="text-5xl font-bold mb-3">$45B+</div>
+                <div className="opacity-90 text-lg">Global AgriTech market</div>
               </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">$20B+</div>
-                <div className="opacity-90">Global Precision Ag market</div>
+              <div className="p-8">
+                <div className="text-5xl font-bold mb-3">$20B+</div>
+                <div className="opacity-90 text-lg">Global Precision Ag market</div>
               </div>
-              <div>
-                <div className="text-4xl font-bold mb-2 text-primary-glow">$175M+</div>
-                <div className="opacity-90">AGX Revenue Potential by 2030</div>
+              <div className="p-8">
+                <div className="text-5xl font-bold mb-3 text-brand-secondary">$175M+</div>
+                <div className="opacity-90 text-lg font-semibold">AGX Revenue Potential by 2030</div>
               </div>
             </div>
           </CardContent>

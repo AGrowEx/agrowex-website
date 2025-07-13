@@ -23,9 +23,9 @@ const Founders = () => {
   ];
 
   return (
-    <section className="py-20 bg-deep-earth text-white">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
+    <section className="py-24 bg-brand-dark text-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             The Founders
           </h2>
@@ -39,16 +39,16 @@ const Founders = () => {
             <img 
               src={foundersImage} 
               alt="AGX Global Founders"
-              className="rounded-lg shadow-glow w-full h-auto"
+              className="rounded-2xl shadow-elevated w-full h-auto"
             />
           </div>
           <div className="space-y-8">
             {founders.map((founder, index) => (
-              <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold text-primary-glow mb-3">{founder.name}</h3>
-                  <p className="text-white/90 mb-2">{founder.experience}</p>
-                  <p className="text-white/70 text-sm">{founder.background}</p>
+              <Card key={index} className="bg-white/15 backdrop-blur-md border-white/20 shadow-elevated">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-brand-secondary mb-4">{founder.name}</h3>
+                  <p className="text-white/90 mb-3 text-lg">{founder.experience}</p>
+                  <p className="text-white/70 font-medium">{founder.background}</p>
                 </CardContent>
               </Card>
             ))}
@@ -56,11 +56,11 @@ const Founders = () => {
         </div>
 
         <div className="text-center">
-          <h3 className="text-2xl font-bold mb-8 text-primary-glow">Together:</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h3 className="text-2xl font-bold mb-10 text-brand-secondary text-center">Together:</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                <p className="text-white/90">{achievement}</p>
+              <div key={index} className="bg-white/15 backdrop-blur-md rounded-xl p-8 shadow-elevated">
+                <p className="text-white/90 text-center font-medium">{achievement}</p>
               </div>
             ))}
           </div>

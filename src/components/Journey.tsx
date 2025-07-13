@@ -25,18 +25,18 @@ const Journey = () => {
   ];
 
   const outcomes = [
-    { metric: "15", label: "Crops tested", color: "text-earth-green" },
-    { metric: "12,000+", label: "Man-days digitized", color: "text-tech-blue" },
-    { metric: "15%", label: "Water usage reduction", color: "text-forest-green" },
-    { metric: "25%", label: "Fertilizer usage drop", color: "text-primary-glow" },
-    { metric: "Higher", label: "Per hectare yield", color: "text-earth-green" }
+    { metric: "15", label: "Crops tested", color: "text-brand-primary" },
+    { metric: "12,000+", label: "Man-days digitized", color: "text-brand-accent" },
+    { metric: "15%", label: "Water usage reduction", color: "text-brand-secondary" },
+    { metric: "25%", label: "Fertilizer usage drop", color: "text-brand-primary" },
+    { metric: "Higher", label: "Per hectare yield", color: "text-brand-secondary" }
   ];
 
   return (
     <section className="py-20 bg-gradient-subtle">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-deep-earth mb-6">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
             Our Journey
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -50,23 +50,23 @@ const Journey = () => {
             {timeline.map((item, index) => (
               <div key={index} className="flex items-center gap-6">
                 <div className="flex-shrink-0">
-                  <div className={`p-4 rounded-full ${
-                    item.status === 'current' ? 'bg-gradient-primary' : 'bg-earth-green'
+                  <div className={`p-4 rounded-full shadow-brand ${
+                    item.status === 'current' ? 'bg-gradient-brand' : 'bg-brand-primary'
                   }`}>
                     <item.icon className="h-6 w-6 text-white" />
                   </div>
                 </div>
-                <Card className="flex-1 shadow-card border-0">
+                <Card className="flex-1 shadow-card border-0 bg-gradient-card hover:shadow-elevated transition-all duration-300">
                   <CardHeader>
                     <div className="flex items-center justify-between">
-                      <CardTitle className="text-xl text-deep-earth">{item.period}</CardTitle>
-                      <Badge variant={item.status === 'current' ? 'default' : 'secondary'}>
+                      <CardTitle className="text-xl text-brand-dark font-semibold">{item.period}</CardTitle>
+                      <Badge variant={item.status === 'current' ? 'default' : 'secondary'} className="font-medium">
                         {item.status === 'current' ? 'Current' : 'Completed'}
                       </Badge>
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{item.title}</p>
+                    <p className="text-muted-foreground text-lg">{item.title}</p>
                   </CardContent>
                 </Card>
               </div>
@@ -75,20 +75,20 @@ const Journey = () => {
         </div>
 
         {/* Pilot Outcomes */}
-        <Card className="bg-white shadow-elegant border-0">
+        <Card className="bg-white shadow-elevated border-0">
           <CardHeader>
-            <CardTitle className="text-2xl text-center text-deep-earth mb-8">
+            <CardTitle className="text-3xl text-center text-brand-dark mb-8 font-bold">
               Pilot Outcomes
             </CardTitle>
           </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <CardContent className="pb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
               {outcomes.map((outcome, index) => (
-                <div key={index} className="text-center">
-                  <div className={`text-3xl font-bold mb-2 ${outcome.color}`}>
+                <div key={index} className="text-center p-6 rounded-xl bg-gradient-card">
+                  <div className={`text-4xl font-bold mb-3 ${outcome.color}`}>
                     {outcome.metric}
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-muted-foreground font-medium">
                     {outcome.label}
                   </div>
                 </div>
