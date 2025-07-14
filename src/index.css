@@ -54,6 +54,7 @@ All colors MUST be HSL. Based on actual AGX Global brand identity.
     --shadow-brand: 0 8px 32px -8px hsl(var(--brand-primary) / 0.2);
     --shadow-card: 0 2px 16px -4px hsl(var(--brand-dark) / 0.08);
     --shadow-elevated: 0 16px 64px -12px hsl(var(--brand-dark) / 0.15);
+    --shadow-professional: 0 1px 3px 0 hsl(var(--brand-dark) / 0.1), 0 1px 2px 0 hsl(var(--brand-dark) / 0.06);
 
     /* Professional Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

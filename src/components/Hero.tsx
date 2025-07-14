@@ -36,17 +36,17 @@ const Hero = () => {
         </div>
         
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="bg-white/15 backdrop-blur-md rounded-xl p-8 shadow-elevated">
-            <div className="text-4xl font-bold text-brand-secondary mb-2">12,000</div>
-            <div className="text-sm opacity-90 font-medium">Years of Agriculture History</div>
+          <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-8 shadow-elevated border border-white/30 hover:bg-white/25 transition-all duration-300">
+            <div className="text-5xl font-bold text-brand-secondary mb-3 tracking-tight">12,000</div>
+            <div className="text-sm opacity-95 font-semibold tracking-wide">Years of Agriculture History</div>
           </div>
-          <div className="bg-white/15 backdrop-blur-md rounded-xl p-8 shadow-elevated">
-            <div className="text-4xl font-bold text-brand-secondary mb-2">$4-8T</div>
-            <div className="text-sm opacity-90 font-medium">Global Agriculture GDP</div>
+          <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-8 shadow-elevated border border-white/30 hover:bg-white/25 transition-all duration-300">
+            <div className="text-5xl font-bold text-brand-secondary mb-3 tracking-tight">$4-8T</div>
+            <div className="text-sm opacity-95 font-semibold tracking-wide">Global Agriculture GDP</div>
           </div>
-          <div className="bg-white/15 backdrop-blur-md rounded-xl p-8 shadow-elevated">
-            <div className="text-4xl font-bold text-brand-secondary mb-2">12%</div>
-            <div className="text-sm opacity-90 font-medium">Digital Transformation in Agri</div>
+          <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-8 shadow-elevated border border-white/30 hover:bg-white/25 transition-all duration-300">
+            <div className="text-5xl font-bold text-brand-secondary mb-3 tracking-tight">12%</div>
+            <div className="text-sm opacity-95 font-semibold tracking-wide">Digital Transformation in Agri</div>
           </div>
         </div>
       </div>

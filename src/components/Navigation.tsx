@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 const Navigation = () => {
   const navItems = [
     { label: "Solutions", href: "#solutions" },
+    { label: "Bhoomi", href: "#bhoomi" },
     { label: "Journey", href: "#journey" },
     { label: "Team", href: "#team" },
     { label: "Business", href: "#business" }

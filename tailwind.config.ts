@@ -78,7 +78,8 @@ export default {
 			boxShadow: {
 				'brand': 'var(--shadow-brand)',
 				'card': 'var(--shadow-card)',
-				'elevated': 'var(--shadow-elevated)'
+				'elevated': 'var(--shadow-elevated)',
+				'professional': 'var(--shadow-professional)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',
