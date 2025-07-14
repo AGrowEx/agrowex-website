@@ -10,19 +10,16 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-md border-b border-border shadow-card">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <img 
               src="/lovable-uploads/ac71843d-6b3e-45d1-bd24-263272620930.png" 
               alt="AGX Global Logo" 
-              className="h-10 w-auto"
+              className="h-8 w-auto"
             />
-            <div>
-              <div className="font-bold text-brand-dark text-xl tracking-tight">AGX Global</div>
-              <div className="text-xs text-muted-foreground font-medium">Xcelerating Agriculture</div>
-            </div>
+            <span className="text-2xl font-bold text-gray-800">AGX Global</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8">
@@ -30,16 +27,19 @@ const Navigation = () => {
               <a 
                 key={item.label}
                 href={item.href}
-                className="text-brand-dark hover:text-brand-primary transition-colors font-medium"
+                className="text-gray-600 hover:text-brand-primary transition-colors font-medium text-sm"
               >
                 {item.label}
               </a>
             ))}
           </div>
           
-          <Button variant="professional" size="sm" className="font-medium">
-            Contact Us
-          </Button>
+          <div className="flex items-center gap-4">
+            <span className="text-sm text-gray-500">EN</span>
+            <Button className="bg-brand-primary hover:bg-brand-primary/90 text-white font-medium px-6">
+              Sign in
+            </Button>
+          </div>
         </div>
       </div>
     </nav>

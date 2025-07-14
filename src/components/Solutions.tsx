@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Bot, Droplets, Shield, BarChart3, Activity, MapPin } from "lucide-react";
 
 const Solutions = () => {
@@ -65,56 +66,57 @@ const Solutions = () => {
     }
   ];
 
+  const solutions = [
+    {
+      icon: Droplets,
+      title: "Save resources",
+      description: "Using sensors and satellites xFarm advises you how to optimize irrigation, defense and fertilization."
+    },
+    {
+      icon: Activity,
+      title: "Monitoring field information", 
+      description: "Optimize your irrigation strategy, protect your crops and manage your farm machinery with a simple tap on the screen."
+    },
+    {
+      icon: BarChart3,
+      title: "Organize your work",
+      description: "Invite your employees to xFarm to plan and monitor activities easily and efficiently."
+    },
+    {
+      icon: Shield,
+      title: "Increase sustainability",
+      description: "With xFarm it will be easy to monitor and improve the sustainability of your farm."
+    }
+  ];
+
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-brand-dark mb-6">
-            Solution 2.0 – GenAI-powered Precision Farming
+    <section className="py-32 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            A platform you can trust
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            A SaaS platform + hardware stack enabling real-time insights, data ownership, automation, and economic & ecological harmony
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Everything you need to optimize your farm operations in one powerful platform
           </p>
         </div>
 
-        {/* 4 Pillars */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-brand-dark mb-8">4 Pillars of Our Platform</h3>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {pillars.map((pillar, index) => (
-              <Card key={index} className={`${pillar.color} text-white shadow-brand border-0`}>
-                <CardContent className="p-8 text-center">
-                  <h4 className="text-2xl font-bold mb-3">{pillar.title}</h4>
-                  <p className="text-sm opacity-90 font-medium">{pillar.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {solutions.map((solution, index) => (
+            <div key={index} className="text-center group">
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                <solution.icon className="w-10 h-10 text-brand-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">{solution.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{solution.description}</p>
+            </div>
+          ))}
         </div>
 
-        {/* Platform Modules */}
-        <div>
-          <h3 className="text-2xl font-bold text-center text-brand-dark mb-8">Platform Modules</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {modules.map((module, index) => (
-              <Card key={index} className="shadow-card hover:shadow-elevated transition-all duration-300 border-0 bg-gradient-card">
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <div className="p-3 bg-gradient-brand rounded-xl shadow-brand">
-                      <module.icon className="h-6 w-6 text-white" />
-                    </div>
-                    <Badge variant="secondary" className="text-xs font-medium">
-                      {module.badge}
-                    </Badge>
-                  </div>
-                  <CardTitle className="text-xl text-brand-dark font-semibold">{module.name}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">{module.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+        <div className="mt-20 text-center">
+          <Button size="lg" className="bg-brand-primary hover:bg-brand-primary/90 text-white px-8 py-4 text-lg font-medium">
+            Discover the offerings
+          </Button>
         </div>
       </div>
     </section>

@@ -9,26 +9,26 @@ All colors MUST be HSL. Based on actual AGX Global brand identity.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 200 15% 20%;
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 200 15% 20%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 200 15% 20%;
+    --popover-foreground: 0 0% 9%;
 
-    --primary: 160 45% 35%;
+    --primary: 142 76% 36%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 120 40% 55%;
+    --primary-light: 142 76% 60%;
 
-    --secondary: 200 20% 15%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 200 10% 45%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 195 85% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
@@ -37,12 +37,12 @@ All colors MUST be HSL. Based on actual AGX Global brand identity.
     --input: 210 20% 88%;
     --ring: 160 45% 35%;
 
-    /* AGX Professional Brand Colors */
-    --brand-primary: 160 45% 35%;      /* Main teal from logo */
-    --brand-secondary: 120 40% 55%;    /* Light green from logo */  
-    --brand-accent: 195 85% 55%;       /* Blue from Bhoomi logo */
-    --brand-dark: 200 20% 15%;         /* Professional dark */
-    --brand-light: 120 30% 85%;        /* Subtle green background */
+    /* AGX Professional Brand Colors - xFarm inspired */
+    --brand-primary: 142 76% 36%;      /* Professional green from xFarm style */
+    --brand-secondary: 142 76% 60%;    /* Lighter green variant */  
+    --brand-accent: 210 40% 96%;       /* Clean light background */
+    --brand-dark: 0 0% 9%;             /* Clean dark text */
+    --brand-light: 0 0% 98%;           /* Clean white background */
 
     /* Professional Gradients */
     --gradient-brand: linear-gradient(135deg, hsl(var(--brand-secondary)), hsl(var(--brand-primary)));
