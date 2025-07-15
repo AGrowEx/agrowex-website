@@ -5,7 +5,6 @@ import Solutions from "@/components/Solutions";
 import Bhoomi from "@/components/Bhoomi";
 import Founders from "@/components/Founders";
 import Journey from "@/components/Journey";
-import BusinessModel from "@/components/BusinessModel";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -25,9 +24,6 @@ const Index = () => {
       </div>
       <div id="team">
         <Founders />
-      </div>
-      <div id="business">
-        <BusinessModel />
       </div>
       <Footer />
     </div>

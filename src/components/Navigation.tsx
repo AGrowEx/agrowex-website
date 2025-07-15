@@ -5,8 +5,7 @@ const Navigation = () => {
     { label: "Solutions", href: "#solutions" },
     { label: "Bhoomi", href: "#bhoomi" },
     { label: "Journey", href: "#journey" },
-    { label: "Team", href: "#team" },
-    { label: "Business", href: "#business" }
+    { label: "Team", href: "#team" }
   ];
 
   return (
