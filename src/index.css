@@ -17,9 +17,9 @@ All colors MUST be HSL. Based on actual AGX Global brand identity.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 9%;
 
-    --primary: 142 76% 36%;
+    --primary: 82 25% 57%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 142 76% 60%;
+    --primary-light: 82 25% 70%;
 
     --secondary: 210 40% 96%;
     --secondary-foreground: 0 0% 9%;
@@ -35,12 +35,12 @@ All colors MUST be HSL. Based on actual AGX Global brand identity.
 
     --border: 210 20% 88%;
     --input: 210 20% 88%;
-    --ring: 160 45% 35%;
+    --ring: 82 25% 57%;
 
-    /* AGX Professional Brand Colors - xFarm inspired */
-    --brand-primary: 142 76% 36%;      /* Professional green from xFarm style */
-    --brand-secondary: 142 76% 60%;    /* Lighter green variant */  
-    --brand-accent: 210 40% 96%;       /* Clean light background */
+    /* AGX Professional Brand Colors - Based on AGX Global logo */
+    --brand-primary: 82 25% 57%;       /* Sage green from logo (#A8C893) */
+    --brand-secondary: 82 25% 45%;     /* Forest green from logo (#5B8A5A) */  
+    --brand-accent: 180 45% 35%;       /* Teal from logo (#2D7474) */
     --brand-dark: 0 0% 9%;             /* Clean dark text */
     --brand-light: 0 0% 98%;           /* Clean white background */
 
@@ -125,5 +125,10 @@ All colors MUST be HSL. Based on actual AGX Global brand identity.
 
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Prevent layout shift from scrollbar appearing/disappearing */
+  html {
+    scrollbar-gutter: stable;
   }
 }

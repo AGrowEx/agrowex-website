@@ -1,22 +1,20 @@
-# Welcome to your Lovable project
+# AGX Global Website
+
+A modern, responsive website for AGX Global showcasing advanced agricultural solutions and innovative farming technologies.
+
+🌐 **Live Site**: https://agrowex.github.io/agrowex-website/
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/10859ca7-5ad9-4cf6-9d7a-bf805161964e
+**Description**: Advanced Agricultural Solutions Website
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/10859ca7-5ad9-4cf6-9d7a-bf805161964e) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -62,12 +60,28 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/10859ca7-5ad9-4cf6-9d7a-bf805161964e) and click on Share -> Publish.
+### GitHub Pages (Current Setup)
 
-## Can I connect a custom domain to my Lovable project?
+This project is configured for automatic deployment to GitHub Pages:
 
-Yes, you can!
+1. **Automatic Deployment**: Every push to the `main` branch triggers a GitHub Actions workflow that builds and deploys the site
+2. **Live URL**: https://agrowex.github.io/agrowex-website/
+3. **Configuration**: The site is configured with the correct base path for GitHub Pages hosting
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Other Hosting Options
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+You can also deploy this project using:
+
+- **Vercel**: Connect your GitHub repo for automatic deployments
+- **Netlify**: Drag & drop the `dist` folder or connect via Git
+- **Any static hosting service**: Build with `npm run build` and upload the `dist` folder
+
+### Manual Build
+
+```sh
+# Build for production
+npm run build
+
+# Preview the build locally
+npm run preview
+```
