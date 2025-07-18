@@ -4,10 +4,6 @@ A modern, responsive website for AGX Global showcasing advanced agricultural sol
 
 🌐 **Live Site**: https://agrowex.github.io/agrowex-website/
 
-## Project info
-
-**Description**: Advanced Agricultural Solutions Website
-
 ## How can I edit this code?
 
 There are several ways of editing your application.
