@@ -34,13 +34,9 @@ const Footer = () => {
                 <Mail className="h-4 w-4" />
                 <span>support@agxglobal.com</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Globe className="h-4 w-4" />
-                <span>Operating in 50+ countries</span>
+              <div className="flex items-start space-x-2">
+                <Globe className="h-4 w-4 mt-0.5" />
+                <span>Operating in 10+ countries and available worldwide</span>
               </div>
             </div>
           </div>
@@ -54,7 +50,7 @@ const Footer = () => {
               <li><button onClick={() => handleSolutionClick('smart-manager')} className="hover:text-white transition-colors text-left">Smart Manager</button></li>
               <li><button onClick={() => handleSolutionClick('local')} className="hover:text-white transition-colors text-left">Bhoomi Local</button></li>
               <li><button onClick={() => handleSolutionClick('optimize')} className="hover:text-white transition-colors text-left">Bhoomi Optimize</button></li>
-              <li><button onClick={() => handleSolutionClick('ground-d')} className="hover:text-white transition-colors text-left">Bhoomi Ground-D</button></li>
+              <li><button onClick={() => handleSolutionClick('ground-d')} className="hover:text-white transition-colors text-left">Bhoomi Ground-0</button></li>
             </ul>
           </div>
 

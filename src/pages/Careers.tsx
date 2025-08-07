@@ -193,7 +193,7 @@ const Careers = () => {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 text-center hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="text-3xl font-bold text-green-600 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
                   <h3 className="font-semibold text-gray-800 mb-1">Countries</h3>
                   <p className="text-sm text-gray-600">Global presence</p>
                 </motion.div>

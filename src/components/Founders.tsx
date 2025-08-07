@@ -5,11 +5,13 @@ const Founders = () => {
   const founders = [
     {
       name: "Dinesh Sahu",
+      role: "Business Partner",
       experience: "18+ years in digital sales & transformation across ANZ, APAC, MEA",
       background: "Ex-entrepreneur, Agripreneur"
     },
     {
       name: "Ankur Gupta", 
+      role: "Business Partner",
       experience: "18+ years in global digital product launches",
       background: "Ex-founder, angel investor"
     }
@@ -19,7 +21,7 @@ const Founders = () => {
     "35+ years of digital, tech, and business experience",
     "Deep Agri ecosystem roots",
     "Operate an 8-hectare smart farm",
-    "Global work across 50+ countries"
+    "Global work across 10+ countries and available worldwide"
   ];
 
   return (
@@ -46,7 +48,8 @@ const Founders = () => {
             {founders.map((founder, index) => (
               <Card key={index} className="bg-white/15 backdrop-blur-md border-white/20 shadow-elevated">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-brand-secondary mb-4">{founder.name}</h3>
+                  <h3 className="text-2xl font-bold text-brand-secondary mb-2">{founder.name}</h3>
+                  <p className="text-brand-secondary/80 font-semibold mb-4">{founder.role}</p>
                   <p className="text-white/90 mb-3 text-lg">{founder.experience}</p>
                   <p className="text-white/70 font-medium">{founder.background}</p>
                 </CardContent>

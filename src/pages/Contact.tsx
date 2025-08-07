@@ -173,26 +173,6 @@ const Contact = () => {
                 </Card>
               </motion.div>
 
-              <motion.div
-                initial={{ x: 50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-              >
-                <Card className="border-2 border-gray-100 hover:border-green-200 transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center">
-                        <Phone className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-800 mb-1">Phone Support</h3>
-                        <p className="text-gray-600 text-sm mb-2">Speak directly with our team</p>
-                        <p className="text-green-600 font-medium">+1 (555) 123-4567</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
             </div>
           </div>
         </div>

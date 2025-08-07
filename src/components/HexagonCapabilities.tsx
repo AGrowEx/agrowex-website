@@ -53,7 +53,7 @@ const DashboardPreviewSolutions = () => {
     {
       id: "ground-d",
       icon: Database,
-      title: "Bhoomi Ground-D",
+      title: "Bhoomi Ground-0",
       subtitle: "IoT Monitoring",
       description: "Comprehensive on-farm monitoring through IoT-powered sensors that collect real-time data on soil, water, and environmental conditions.",
       features: ["IoT sensor networks", "Real-time data collection", "Automated alerts", "Historical trend analysis"],

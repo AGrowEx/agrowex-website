@@ -23,7 +23,7 @@ const About = () => {
   const founders = [
     {
       name: "Dinesh Sahu",
-      role: "Co-Founder & COO",
+      role: "Business Partner",
       image: "/dinesh.png",
       experience: "18+ years experience leading digital transformation across ANZ, APAC, MEA",
       background: "Ex-entrepreneur and Agripreneur",
@@ -33,7 +33,7 @@ const About = () => {
     },
     {
       name: "Ankur Gupta", 
-      role: "Co-Founder & CEO",
+      role: "Business Partner",
       image: "/ankur.png",
       experience: "18+ years experience launching and expanding global digital products across APAC and EMEA",
       background: "Ex-founder and angel investor",
@@ -49,7 +49,6 @@ const About = () => {
     agricultureRoots: "Agriculture ecosystem roots - farming and wholesale production selling",
     realFarmingExperience: "Real farming experience - lived the life of farmers and ran an 8-hectare farm, automating most processes over 5+ years",
     globalNetwork: "Global network - lived in more than 20 countries and worked in over 50",
-    currentTeam: "Currently running an 8-member product development team at AgX Global"
   };
 
   const milestones = [
@@ -172,7 +171,7 @@ const About = () => {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 text-center hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="text-3xl font-bold text-green-600 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-green-600 mb-2">10+</div>
                   <h3 className="font-semibold text-gray-800 mb-1">Countries Reached</h3>
                   <p className="text-sm text-gray-600">Global presence</p>
                 </motion.div>
@@ -317,9 +316,6 @@ const About = () => {
                           <div>
                             <h3 className="text-2xl font-bold text-gray-800 mb-1">{founder.name}</h3>
                             <p className="text-green-600 font-semibold mb-2">{founder.role}</p>
-                            <div className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium inline-block">
-                              {founder.name === "Dinesh Sahu" ? "COO" : "CEO"}
-                            </div>
                           </div>
                           <a
                             href={founder.linkedin}
@@ -399,10 +395,6 @@ const About = () => {
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-2">Global Network</h4>
                       <p className="text-gray-600 text-sm">{combinedProfile.globalNetwork}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800 mb-2">Current Team</h4>
-                      <p className="text-gray-600 text-sm">{combinedProfile.currentTeam}</p>
                     </div>
                     <div className="pt-4">
                       <div className="text-center">

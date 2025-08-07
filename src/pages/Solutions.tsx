@@ -163,7 +163,7 @@ const Solutions = () => {
               </h2>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                 Discover how each Bhoomi solution addresses specific farming challenges. 
-                Click on any solution to learn more about its features and capabilities.
+                <span className="text-green-600 font-semibold">Click on the interactive bars below</span> to explore detailed features and capabilities for each solution.
               </p>
             </div>
           </ScrollReveal>

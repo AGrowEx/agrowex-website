@@ -75,7 +75,7 @@ const SplitScreenSolutions = () => {
     {
       id: "ground-d",
       icon: Cpu,
-      title: "Bhoomi Ground-D",
+      title: "Bhoomi Ground-0",
       subtitle: "IoT Monitoring",
       description: "Comprehensive on-farm monitoring through IoT-powered sensors that collect real-time data on soil, water, and environmental conditions.",
       features: ["IoT sensor networks", "Real-time data collection", "Automated alerts", "Historical trend analysis"],
@@ -110,10 +110,12 @@ const SplitScreenSolutions = () => {
       <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
         <div className="grid lg:grid-cols-2 min-h-[600px]">
           {/* Left Side - Solution List */}
-          <div className="border-r border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100">
+          <div className="border-r border-gray-200 bg-gradient-to-br from-gray-50 to-gray-100 relative">
+            {/* Subtle animated indicator */}
+            <div className="absolute -right-1 top-32 w-1 h-16 bg-gradient-to-b from-green-400 to-green-600 rounded-full animate-pulse opacity-60"></div>
             <div className="p-6 border-b border-gray-200 bg-white">
               <h3 className="text-xl font-bold text-gray-800">Select a Solution</h3>
-              <p className="text-sm text-gray-600 mt-1">Click to explore each module in detail</p>
+              <p className="text-sm text-gray-600 mt-1">👆 Click any bar below to explore each module in detail</p>
             </div>
             
             <div className="space-y-2 p-4">
@@ -123,22 +125,26 @@ const SplitScreenSolutions = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => setSelectedSolution(index)}
-                  className={`cursor-pointer p-4 rounded-xl transition-all duration-200 ${
+                  className={`cursor-pointer p-4 rounded-xl transition-all duration-200 group ${
                     selectedSolution === index 
-                      ? 'bg-white shadow-lg border-2 border-green-300 transform scale-102' 
-                      : 'bg-white/80 hover:bg-white hover:shadow-md'
+                      ? 'bg-white shadow-lg border-2 border-green-500 transform scale-102 ring-2 ring-green-200' 
+                      : 'bg-white/80 hover:bg-white hover:shadow-xl hover:border-2 hover:border-green-300 hover:scale-[1.01] border-2 border-transparent'
                   }`}
                 >
                   <div className="flex items-center space-x-4">
-                    <div className={`p-3 rounded-lg ${solution.color} flex-shrink-0`}>
+                    <div className={`p-3 rounded-lg ${solution.color} flex-shrink-0 transition-all duration-200 ${
+                      selectedSolution === index ? 'shadow-lg' : 'group-hover:shadow-md group-hover:scale-105'
+                    }`}>
                       <solution.icon className="h-6 w-6 text-white" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="font-semibold text-gray-800 truncate">{solution.title}</h4>
-                      <p className="text-sm text-gray-600 truncate">{solution.subtitle}</p>
+                      <h4 className={`font-semibold truncate transition-colors duration-200 ${
+                        selectedSolution === index ? 'text-green-700' : 'text-gray-800 group-hover:text-green-600'
+                      }`}>{solution.title}</h4>
+                      <p className="text-sm text-gray-600 truncate group-hover:text-gray-700">{solution.subtitle}</p>
                     </div>
-                    <ChevronRight className={`h-5 w-5 transition-transform ${
-                      selectedSolution === index ? 'text-green-600 transform rotate-90' : 'text-gray-400'
+                    <ChevronRight className={`h-5 w-5 transition-all duration-200 ${
+                      selectedSolution === index ? 'text-green-600 transform rotate-90 scale-110' : 'text-gray-400 group-hover:text-green-500 group-hover:translate-x-1'
                     }`} />
                   </div>
                 </motion.div>

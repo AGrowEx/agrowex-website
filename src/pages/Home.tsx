@@ -180,7 +180,7 @@ const Home = () => {
                   ))}
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 items-center">
+                <div className="flex flex-row gap-4 flex-wrap justify-start items-center">
                   <a
                     href="https://play.google.com/store/apps/details?id=com.agrowex.bhoomi&hl=en_IN"
                     target="_blank"
@@ -290,7 +290,7 @@ const Home = () => {
               Start your journey with Bhoomi today and experience the future of agriculture. 
               Download the app or get in touch with our team for a personalized demo.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-row gap-4 flex-wrap justify-center items-center">
               <a
                 href="https://play.google.com/store/apps/details?id=com.agrowex.bhoomi&hl=en_IN"
                 target="_blank"

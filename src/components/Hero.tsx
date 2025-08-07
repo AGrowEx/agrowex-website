@@ -88,34 +88,32 @@ const Hero = () => {
 
             <motion.div 
               variants={itemVariants}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-row gap-4 flex-wrap justify-start"
             >
-              <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.agrowex.bhoomi&hl=en_IN"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-48 h-16 flex items-center justify-center hover:scale-105 transition-transform duration-300"
+                  className="w-36 sm:w-44 h-16 flex items-center justify-center hover:scale-105 transition-transform duration-300 flex-shrink-0"
                 >
                   <img
                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                     alt="Get it on Google Play"
-                    className="h-16 w-44 object-contain"
+                    className="h-14 w-auto object-contain"
                   />
                 </a>
                 <a
                   href="https://apps.apple.com/in/app/bhoomi-earth/id6467924283"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-48 h-16 flex items-center justify-center hover:scale-105 transition-transform duration-300"
+                  className="w-36 sm:w-44 h-16 flex items-center justify-center hover:scale-105 transition-transform duration-300 flex-shrink-0"
                 >
                   <img
                     src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                     alt="Download on the App Store"
-                    className="h-12 w-44 object-contain"
+                    className="h-10 w-auto object-contain"
                   />
                 </a>
-              </div>
             </motion.div>
 
           </div>
